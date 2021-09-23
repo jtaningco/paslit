@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StyledButton } from "./styles";
 
-// Types (style): primary, secondary, tertiary
+// Types (variant): primary, secondary, tertiary
 // Label (label): Text inside the button
 // Type (type): Button type (i.e. submit, button, etc.)
 // On Click (onClick): JavaScript onClick function
@@ -53,14 +53,14 @@ const tertiary = {
 }
 
 const Button = ({
-    style,
+    variant,
     label,
     type,
     onClick,
     className
 }) => (
     <StyledButton 
-        style={style === "secondary" ? secondary : style === "tertiary" ? tertiary : primary}
+        variant={variant === "secondary" ? secondary : variant === "tertiary" ? tertiary : primary}
         type={type ? type : "button"}
         onClick={onClick}
         className={className}
@@ -70,7 +70,7 @@ const Button = ({
 )
 
 Button.defaultProps = {
-    style: 'primary',
+    variant: 'primary',
     label: 'Button',
     type: 'button',
     onClick: null,
@@ -78,7 +78,7 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
-    style: PropTypes.string,
+    variant: PropTypes.string,
     label: PropTypes.string.isRequired,
     type: PropTypes.string,
     onClick: PropTypes.func,
