@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const StyledButton = styled.button.attrs(props => ({
-    color: props.style.default.color || "var(--muted-white)",
-    background: props.style.default.background || "var(--accent-blue)",
-    borderColor: props.style.default.border || "transparent",
-    hoverColor: props.style.hover.color || "var(--muted-white)",
-    hoverBackground: props.style.hover.background || "var(--accent-blue)",
-    hoverBorderColor: props.style.hover.border || "transparent",
-    hoverDropShadow: props.style.hover.dropShadow || "none"
+    color: props.variant.default.color || "var(--muted-white)",
+    background: props.variant.default.background || "var(--accent-blue)",
+    borderColor: props.variant.default.border || "transparent",
+    hoverColor: props.variant.hover.color || "var(--muted-white)",
+    hoverBackground: props.variant.hover.background || "var(--accent-blue)",
+    hoverBorderColor: props.variant.hover.border || "transparent",
+    hoverDropShadow: props.variant.hover.dropShadow || "none"
 }))`
     width: auto;
     height: auto;

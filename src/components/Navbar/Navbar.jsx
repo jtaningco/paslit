@@ -38,7 +38,7 @@ const Navbar = () => {
                 <MobileItem className="button">
                     <ButtonLink href="mailto:paslitofficial@gmail.com">
                         <Button
-                            style="primary"
+                            variant="primary"
                             type="button"
                             label="Contact Us"
                         />
@@ -47,7 +47,7 @@ const Navbar = () => {
             </NavMenu>
             <ButtonLink href="mailto:paslitofficial@gmail.com">
                 <Button
-                    style="primary"
+                    variant="primary"
                     type="button"
                     label="Contact Us"
                     className="navButton"

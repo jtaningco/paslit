@@ -92,13 +92,13 @@ const Record = () => {
                                 <Body dangerouslySetInnerHTML={{ __html: selectedData.description }} />
                                 <Buttons>
                                     <Link href={selectedData.website} target="_blank" rel="noreferrer">
-                                        <Button style="primary" label="Website" className="full__width" />
+                                        <Button variant="primary" label="Website" className="full__width" />
                                     </Link>
                                     <Link href={selectedData.brochure} target="_blank" rel="noreferrer">
-                                        <Button style="primary" label="See our Brochure" className="full__width" />
+                                        <Button variant="primary" label="See our Brochure" className="full__width" />
                                     </Link>
                                     <Link href={selectedData.donation} target="_blank" rel="noreferrer">
-                                        <Button style="secondary" label="Donate" className="full__width" />
+                                        <Button variant="secondary" label="Donate" className="full__width" />
                                     </Link>
                                 </Buttons>
                             </Content>
