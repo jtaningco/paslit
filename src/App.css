@@ -1,0 +1,101 @@
+/* DON'T MIND THIS FILE, use ./theme/globalStyles.js for global styling */
+
+/* import Spartan Bold (700), Spartan Black (900), and Open Sans Regular (400) fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Spartan:wght@700;900&display=swap');
+
+/* initial CSS styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* design system */
+:root {
+  --paslit-pink: #EE446A;
+  --paslit-blue: #FFB700;
+  --paslit-cream: #57CEFE;
+  --accent-blue:  #3C64B1;
+  --background: #F4F6FB;
+
+  --muted-dark: #373F41;
+  --muted-light: #737B7D;
+  --muted-lighter: #E2E5E6;
+  --muted-white: #F8F8F8;
+
+  --hard-radius: 0px;
+  --soft-radius: 10px;
+
+  --normal-drop-shadow: 0px 0px 20px rgba(20, 20, 20, 0.1);
+  --hover-drop-shadow: 0px 5px 20px rgba(20, 20, 20, 0.15);
+  --nav-drop-shadow: 0px 4px 8px rgba(20, 20, 20, 0.1);
+
+  --spartan-font: "Spartan", sans-serif;
+  --open-sans-font: "Open Sans", sans-serif;
+}
+
+.hero-title {
+  font-family: var(--spartan-font);
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: var(--muted-dark);
+}
+
+.hero-subtitle {
+  font-family: var(--open-sans-font);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--muted-light);
+}
+
+h1, .header {
+  font-family: var(--spartan-font);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--muted-dark);
+}
+
+h2, .subheader {
+  font-family: var(--spartan-font);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--muted-dark);
+}
+
+h3, .body-big {
+  font-family: var(--open-sans-font);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--muted-dark);
+}
+
+p, .body { 
+  font-family: var(--open-sans-font);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--muted-dark);
+}
+
+.subtitle { 
+  font-family: var(--open-sans-font);
+  font-size: 0.85rem;
+  line-height: 1.35rem;
+  color: var(--muted-dark);
+}
+
+.caption {
+  font-family: var(--open-sans-font);
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: var(--muted-dark);
+}
+
+.full__width {
+  min-width: 200px;
+  width: 100%;
+}
