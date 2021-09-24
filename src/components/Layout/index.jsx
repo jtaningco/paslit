@@ -57,7 +57,7 @@ const Layout = ({ children }) => (
                 // Once thumbnail is available, import image and use here
                 {
                     name: `og:image`,
-                    content: seo.siteThumbnail,
+                    content: seo.siteThumbnail
                 },
                 {
                     name: `twitter:image`,
