@@ -17,6 +17,7 @@ const Layout = ({ children }) => (
         <Helmet
             title={seo.siteTitle}
             titleTemplate={`%s`}
+            defaultTitle="Paslit"
             meta={[
                 {
                     name: `description`,
@@ -54,6 +55,7 @@ const Layout = ({ children }) => (
                     name: `og:url`,
                     content: `https://paslit.org/`,
                 },
+                
                 // Once thumbnail is available, import image and use here
                 {
                     name: `og:image`,
@@ -62,6 +64,12 @@ const Layout = ({ children }) => (
                 {
                     name: `twitter:image`,
                     content: seo.siteThumbnail
+                },
+                
+                // Developers
+                {
+                    name: `developer`,
+                    content: "Joshua Taningco",
                 }
             ]}
         />
