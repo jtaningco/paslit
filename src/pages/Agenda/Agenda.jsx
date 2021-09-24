@@ -2,7 +2,7 @@
 import * as React from "react";
 
 // COMPONENTS
-import Layout from "../../components/Layout";
+// import Layout from "../../components/Layout";
 import Hero from "../../components/Hero";
 import Images from "./components/Images";
 import Join from "./components/Join";
@@ -65,7 +65,7 @@ const cosignatoriesData = [
 ]
 
 const Agenda = () => (
-    <Layout>
+    <>
         <Hero 
             backgroundColor="#FFE4C0"
             title="Comprehensive Agenda"
@@ -74,7 +74,7 @@ const Agenda = () => (
         <Images images={images} />
         <Join read="https://bit.ly/PaslitCA2021" cosign="https://bit.ly/PaslitCA" />
         <CoSignatories partners={cosignatoriesData} />
-    </Layout>
+    </>
 )
 
 export default Agenda;

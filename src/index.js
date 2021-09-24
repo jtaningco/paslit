@@ -13,7 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback={
       <Loader type="ThreeDots"
-        color="EE446A"
+        color="#EE446A"
         height={100}
         width={100}
         timeout={3000}

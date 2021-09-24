@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // COMPONENTS
-import Layout from "../../components/Layout";
+// import Layout from "../../components/Layout";
 import Hero from "../../components/Hero";
 import {
     Container,
@@ -37,14 +37,14 @@ const partners = [
 ]
 
 const Partners = () => (
-    <Layout>
+    <>
         <Hero 
             backgroundColor="#FFF1F4"
             title="A Virtual Gateway to CCIs"
             description="Child Caring Institutions (CCIs) in the Philippines"
         />
         <Container>
-            <Title id="all">Our Partners</Title>
+            <Title id="org">Our Partners</Title>
             <Images>
                 {
                     partners.map((partner) => (
@@ -58,7 +58,7 @@ const Partners = () => (
                 }
             </Images>
         </Container>
-    </Layout>
+    </>
 )
 
 export default Partners;

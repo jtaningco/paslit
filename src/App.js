@@ -1,6 +1,7 @@
 import React, { lazy } from 'react'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import Layout from "./components/Layout";
 import GlobalStyle from './theme/globalStyles';
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -13,14 +14,16 @@ const Agenda = lazy(async () => await import('./pages/Agenda'))
 const App = () => {
   return (
     <BrowserRouter>
-    <GlobalStyle />
-    <ScrollToTop />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/partners" component={Partners} />
-        <Route exact path="/partners/:name" component={Record} />
-        <Route exact path="/agenda" component={Agenda} />
-      </Switch>
+      <GlobalStyle />
+      <ScrollToTop />
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/partners" component={Partners} />
+          <Route exact path="/partners/:name" component={Record} />
+          <Route exact path="/agenda" component={Agenda} />
+        </Switch>
+      </Layout>
     </BrowserRouter>
   );
 }
