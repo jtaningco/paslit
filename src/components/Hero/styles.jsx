@@ -12,10 +12,14 @@ export const Container = styled.section`
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
 
-    padding: 0 10rem;
+    padding: 0 12rem;
+
+    @media only screen and (max-width: 1024px) {
+        padding: 0 8rem;
+    }
 
     @media only screen and (max-width: 768px) {
         padding: 0 4rem;
@@ -46,6 +50,12 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
+    width: 75%;
     color: var(--paslit-blue);
-    padding: 1rem 0 2.5rem 0;
+    padding: 2rem 0 4rem 0;
+
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 1.5rem 0 3rem 0;
+    }
 `;

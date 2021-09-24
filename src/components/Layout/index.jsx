@@ -8,7 +8,8 @@ import thumbnail from "../../assets/thumbnail.png"
 
 const seo = {
     siteTitle: "Paslit",
-    siteDescription: "Paslit is a Filipino youth-led policy advocacy organization for abandoned, neglected, and orphaned children."
+    siteDescription: "Paslit is a Filipino youth-led policy advocacy organization for abandoned, neglected, and orphaned children.",
+    siteThumbnail: thumbnail
 }
 
 const Layout = ({ children }) => (
@@ -56,11 +57,11 @@ const Layout = ({ children }) => (
                 // Once thumbnail is available, import image and use here
                 {
                     name: `og:image`,
-                    content: thumbnail,
+                    content: seo.siteThumbnail,
                 },
                 {
                     name: `twitter:image`,
-                    content: thumbnail
+                    content: seo.siteThumbnail
                 }
             ]}
         />

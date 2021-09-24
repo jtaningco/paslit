@@ -15,7 +15,7 @@ import Button from "../Button/Button";
 import Hamburger from 'hamburger-react'
 
 // STYLES AND ASSETS
-import logo from "./assets/logo-colored.png";
+import logo from "./assets/navbar-logo.png";
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
@@ -30,7 +30,7 @@ const Navbar = () => {
                     Home
                 </NavLink>
                 <NavLink activeClassName='is-active' to="/partners">
-                    Partners
+                    CCI Partners
                 </NavLink>
                 <NavLink exact={true} activeClassName='is-active' to="/agenda">
                     Comprehensive Agenda

@@ -23,7 +23,8 @@ const Footer = () => (
         <Wrapper>
             <Menu>
                 <Title>Partners</Title>
-                <Section to="/partners#all">List of Partners</Section>
+                <Section to="/partners">CCI Partners</Section>
+                <Section to="/partners#org">Org Partners</Section>
             </Menu>
             <Menu>
                 <Title>Agenda</Title>

@@ -27,7 +27,7 @@ export const NavLogo = styled(Link)`
 
 export const Logo = styled.img`
     width: auto;
-    height: auto;
+    height: 64px;
 `;
 
 export const NavLink = styled(Link)`

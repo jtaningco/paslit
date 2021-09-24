@@ -40,8 +40,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Image = styled.img`
-    margin: 2rem 0;
-    width: 40%;
+    margin: 1rem 0;
+    width: 45%;
     height: auto;
 
     @media only screen and (max-width: 1024px) {

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // COMPONENTS
-import Layout from "../../components/Layout";
+// import Layout from "../../components/Layout";
 import Button from "../../components/Button";
 import Header from "./components/Header";
 import {
@@ -76,7 +76,7 @@ const Record = () => {
     }, [name])
 
     return (
-        <Layout>
+        <>
             <Container>
                 {
                     selectedData && selectedData
@@ -105,14 +105,14 @@ const Record = () => {
                         </>
                     :
                         <Loader type="ThreeDots"
-                            color="EE446A"
+                            color="#EE446A"
                             height={100}
                             width={100}
                             timeout={3000}
                         /> 
                 }
             </Container>
-        </Layout>
+        </>
     )
 }
 
