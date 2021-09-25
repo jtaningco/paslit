@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Hero from "../../components/Hero";
 import {
     Container,
-    Title,
+    // Title,
     Images,
     Wrapper,
     Image,
@@ -43,8 +43,7 @@ const Partners = () => (
             title="A Virtual Gateway to CCIs"
             description="Child Caring Institutions (CCIs) in the Philippines"
         />
-        <Container>
-            <Title id="org">Our Partners</Title>
+        <Container id="cci">
             <Images>
                 {
                     partners.map((partner) => (

@@ -12,11 +12,11 @@ export const Container = styled.div`
     align-content: center;
 `;
 
-export const Title = styled.h1`
-    color: var(--paslit-blue);
-    margin-bottom: 2.5rem;
-    text-align: center;
-`;
+// export const Title = styled.h1`
+//     color: var(--paslit-blue);
+//     margin-bottom: 2.5rem;
+//     text-align: center;
+// `;
 
 export const Images = styled.div`
     width: 100%;

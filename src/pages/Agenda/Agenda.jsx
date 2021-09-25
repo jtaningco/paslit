@@ -72,7 +72,7 @@ const Agenda = () => (
             description="Paslit's Comprehensive Agenda is a statement that contains a set of concrete and actionable policy proposals which aim to foster a brighter, safer, and more loving future for abandoned, neglected, and orphaned children (ANOCs)."
         />
         <Images images={images} />
-        <Join read="https://bit.ly/PaslitCA2021" cosign="https://bit.ly/PaslitCA" />
+        <Join read="https://drive.google.com/file/d/1cTTdXq5FlrCRjiIegPh2xCH0cqNmMRHx/view" cosign="https://bit.ly/PaslitCA" />
         <CoSignatories partners={cosignatoriesData} />
     </>
 )
