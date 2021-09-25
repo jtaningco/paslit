@@ -12,7 +12,7 @@ import {
 
 const CoSignatories = ({ partners }) => (
     <Container>
-        <Title id="co-signatories">Co-Signatories</Title>
+        <Title id="org">Organizational Partners</Title>
         <Wrapper>
             {
                 partners.map((partner) => (
